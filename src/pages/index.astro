@@ -1,27 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
-
-const pageTitle = "La primera no se olvida";
+import BaseLayout from '../layouts/Baselayout.astro';
+import Greeting from '../components/Greeting';
+const { pageTitle } = Astro.props;
 ---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Hoy soñe con ella, ya no me sueño junto a ella pero sigo viendola...</h2>
+    <Greeting client:load messages={["Como te ha ido?", "Te extraño", "Sigues siendo tú?", "Haz pensado en mi?", "Vas a regresar?"]} />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h1>{pageTitle}</h1>
-		<Footer />
-		  <script>
-        import "../scripts/menu.js";
-  </script>
-	</body>
-</html>
+</BaseLayout>

@@ -3,8 +3,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
+import BaseLayout from '../layouts/Baselayout.astro';
 
-const pageTitle = "Sobre mi";
+const {pageTitle} = Astro.props;
 
 const identity = {
   firstName: "César",
@@ -16,7 +17,7 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 const skillColor = "crimson";
 const fontWeight = "bold";
@@ -24,19 +25,7 @@ const textCase = "uppercase";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-	</head>
-<body>
-	<Header />
-	  
-    <h1>{pageTitle}</h1>
+	  <BaseLayout pageTitle={pageTitle}>
 	 <style define:vars={{skillColor, fontWeight, textCase}}>
   h1 {	
     color: purple;
@@ -66,14 +55,11 @@ const textCase = "uppercase";
 <ul>
   {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
-{happy && <p>¡Estoy feliz de aprender Astro!</p>}
+{happy && <p>¡Estoy mejorando para seguir adelante!</p>}
 
-{finished && <p>¡He terminado este tutorial!</p>}
+{finished && <p>¡He terminado haceun tiempo ya!</p>}
 
-{goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
-<Footer />
-<script>
-    import "../scripts/menu.js";
-  </script>
-</body>
-</html>
+{goal === 3 ? <p>Mi objetivo es superarla en 3 meses.</p> : <p>Mi objetivo no son 3 días.</p>}
+
+    </BaseLayout>
+    

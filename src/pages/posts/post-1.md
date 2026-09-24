@@ -1,18 +1,19 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
+
 title: 'Mi primera publicación en el blog'
 pubDate: 2022-07-01
-description: 'Este es la primera publicación de mi nuevo blog Astro.'
-author: 'Alumno de Astro'
+description: 'Ella fue la primera '
+author: 'Anonimo'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
+    url: 'https://i.pinimg.com/originals/22/bf/aa/22bfaaa0ad1c8368faff3810c137980c.jpg'
     alt: 'El logotipo de Astro sobre un fondo oscuro con un brillo rosado.'
 tags: ["astro", "bloguear", "aprender en público"]
 ---
-# Mi primera publicación en el blog
 
-Publicado el: 2026-09-23
+Por eso dolera tanto ? porque es la primera, siempre tuvve la idea de solo estar con una pareja por eso quise darme bastante tiempo para conocerla antes de formalizar algo, pero parece q no fue suficiente.
 
-¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aquí, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
+
 
 ## Lo que he conseguido
 

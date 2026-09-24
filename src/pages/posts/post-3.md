@@ -1,9 +1,11 @@
 ---
-title: Mi tercera publicación en el blog
-author: Alumno de Astro
-description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
+layout: ../../layouts/MarkdownPostLayout.astro
+
+title: Volveras
+author: Anonimo
+description: "Tuve algunos problemas, pero preguntar siempre ayuda "
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
+    url: "https://server.wallpaperalchemy.com/storage/wallpapers/1018/thorfinn-vinland-saga-4k-anime-wallpaper.jpg"
     alt: "El logotipo de Astro sobre un fondo oscuro con rayos de colores del arcoíris."
 pubDate: 2022-07-15
 tags: ["astro", "aprender en público", "contratiempos", "comunidad"]

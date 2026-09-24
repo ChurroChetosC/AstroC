@@ -1,7 +1,9 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
+
 title: Mi segunda publicación en el blog
-author: Alumno de Astro
-description: "Después de aprender un poco de Astro, ¡no podía parar!"
+author: Anonimo
+description: "Después de aprender un poco me vuelvo a perder "
 image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "El logotipo de Astro sobre un fondo oscuro con un arco degradado en tonos púrpura."
