@@ -1,11 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 
-title: Mi segunda publicación en el blog
+title: Do you think about me 
 author: Anonimo
 description: "Después de aprender un poco me vuelvo a perder "
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
+    url: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3b/ec/d0/3becd0dc-54fb-0c56-3dce-208f52f9e5d5/198846585161.jpg/1200x1200bf-60.jpg"
     alt: "El logotipo de Astro sobre un fondo oscuro con un arco degradado en tonos púrpura."
 pubDate: 2022-07-08
 tags: ["astro", "bloguear", "aprender en público", "éxitos"]

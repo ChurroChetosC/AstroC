@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/Baselayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -7,18 +8,23 @@ import '../styles/global.css';
 import BlogPost from '../components/BlogPost.astro';
 
 
+
 const pageTitle = "Blog";
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const { pagetitle } = Astro.props;
+const allPosts = await getCollection("blog");
+
 ---
 <BaseLayout pageTitle={pageTitle}>
      <h1>Esta es la tercera página</h1>
         <h2>Estoy hambriento    </h2>
-        <h3>Extraño a mi ex pero debo tener caracteeso es lo q me sapara de un mediocre, si no puedo lidiar con esto ahorita no estare preparado para un futuro </h3>
-     <ul>
-    {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-
-    </ul>
+        <h3>Extraño a mi ex pero debo tener caracterso es lo q me sapara de un mediocre, si no puedo lidiar con esto ahorita no estare preparado para un futuro </h3>
+      <ul>
+    {
+      allPosts.map((post) => (
+        
+        <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
+      ))
+    }
+  </ul>
 </BaseLayout>
 
    

@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 
-title: Volveras
-author: Anonimo
+title: En parte no.. No lo sé
+author: DesarrolladorC
 description: "Tuve algunos problemas, pero preguntar siempre ayuda "
 image:
     url: "https://server.wallpaperalchemy.com/storage/wallpapers/1018/thorfinn-vinland-saga-4k-anime-wallpaper.jpg"

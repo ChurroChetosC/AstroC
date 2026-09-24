@@ -1,7 +1,6 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 
-title: 'Mi primera publicación en el blog'
+title: 'No one noticed'
 pubDate: 2022-07-01
 description: 'Ella fue la primera '
 author: 'Anonimo'
