@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
 const pageTitle = "Blog";
@@ -13,11 +16,7 @@ const pageTitle = "Blog";
         <title>{pageTitle}</title>
     </head>
     <body>
-        <a href="/">Inicio</a>
-        <h3>-----------------</h3>
-        <a href="/about/">Sobre mi</a>
-        <h3>-----------------</h3>
-        <a href="/blog/">Blog</a>
+        <Header />
     <ul>
       <li><a href="/posts/post-1/">Publicación 1</a></li>
       <li><a href="/posts/post-2/">Publicación 2</a></li>
@@ -28,5 +27,9 @@ const pageTitle = "Blog";
         <h1>Esta es la tercera página</h1>
         <h2>Estoy hambriento    </h2>
         <h3>Extraño a mi ex pero debo tener caracteeso es lo q me sapara de un mediocre, si no puedo lidiar con esto ahorita no estare preparado para un futuro </h3>
+    <Footer />
+    <script>
+    import "../scripts/menu.js";
+  </script>
     </body>
 </html>

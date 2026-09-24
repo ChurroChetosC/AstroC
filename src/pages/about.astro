@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
 const pageTitle = "Sobre mi";
@@ -31,11 +34,7 @@ const textCase = "uppercase";
     <title>{pageTitle}</title>
 	</head>
 <body>
-	<a href="/">Inicio</a>
-	<h3>------------------</h3>
-	<a href="/about/">Sobre mi</a>
-	<h3>-----------------</h3>
-	<a href="/blog/">Blog</a>
+	<Header />
 	  
     <h1>{pageTitle}</h1>
 	 <style define:vars={{skillColor, fontWeight, textCase}}>
@@ -72,5 +71,9 @@ const textCase = "uppercase";
 {finished && <p>¡He terminado este tutorial!</p>}
 
 {goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
+<Footer />
+<script>
+    import "../scripts/menu.js";
+  </script>
 </body>
 </html>
